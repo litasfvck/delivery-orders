@@ -1,19 +1,19 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ordersApi } from '../../api/ordersApi';
-import { FormField } from '../../components/FormField/FormField';
-import { TextInput } from '../../components/TextInput/TextInput';
 import { Button } from '../../components/Button/Button';
+import { FormField } from '../../components/FormField/FormField';
 import { StateMessage } from '../../components/StateMessage/StateMessage';
-import { validateOrderForm, todayIso } from '../../utils/validateOrder';
+import { TextInput } from '../../components/TextInput/TextInput';
+import { todayIso, validateOrderForm } from '../../utils/validateOrder';
 import styles from './CreateOrderPage.module.scss';
 
 const EMPTY_FORM = {
   senderCity: '',
   senderAddress: '',
-  recipientCity: '',
-  recipientAddress: '',
-  weightKg: '',
+  receiverCity: '',
+  receiverAddress: '',
+  weight: '',
   pickupDate: '',
 };
 
@@ -44,7 +44,7 @@ export function CreateOrderPage() {
     try {
       const created = await ordersApi.create({
         ...values,
-        weightKg: Number(values.weightKg),
+        weight: Number(values.weight),
       });
       navigate(`/orders/${created.id}`, {
         state: { justCreated: true },
@@ -112,33 +112,33 @@ export function CreateOrderPage() {
           <div className={styles.row}>
             <FormField
               label="Город получателя"
-              htmlFor="recipientCity"
+              htmlFor="receiverCity"
               required
-              error={errors.recipientCity}
+              error={errors.receiverCity}
             >
               <TextInput
-                id="recipientCity"
-                name="recipientCity"
+                id="receiverCity"
+                name="receiverCity"
                 placeholder="например, Казань"
-                value={values.recipientCity}
-                onChange={handleChange('recipientCity')}
-                invalid={Boolean(errors.recipientCity)}
+                value={values.receiverCity}
+                onChange={handleChange('receiverCity')}
+                invalid={Boolean(errors.receiverCity)}
                 autoComplete="off"
               />
             </FormField>
             <FormField
               label="Адрес получателя"
-              htmlFor="recipientAddress"
+              htmlFor="receiverAddress"
               required
-              error={errors.recipientAddress}
+              error={errors.receiverAddress}
             >
               <TextInput
-                id="recipientAddress"
-                name="recipientAddress"
+                id="receiverAddress"
+                name="receiverAddress"
                 placeholder="улица, дом, офис/квартира"
-                value={values.recipientAddress}
-                onChange={handleChange('recipientAddress')}
-                invalid={Boolean(errors.recipientAddress)}
+                value={values.receiverAddress}
+                onChange={handleChange('receiverAddress')}
+                invalid={Boolean(errors.receiverAddress)}
                 autoComplete="off"
               />
             </FormField>
@@ -153,22 +153,22 @@ export function CreateOrderPage() {
           <div className={styles.row}>
             <FormField
               label="Вес груза, кг"
-              htmlFor="weightKg"
+              htmlFor="weight"
               required
-              error={errors.weightKg}
+              error={errors.weight}
               hint="Укажите вес в килограммах"
             >
               <TextInput
-                id="weightKg"
-                name="weightKg"
+                id="weight"
+                name="weight"
                 type="number"
                 min="0.1"
                 step="0.1"
                 inputMode="decimal"
                 placeholder="0.0"
-                value={values.weightKg}
-                onChange={handleChange('weightKg')}
-                invalid={Boolean(errors.weightKg)}
+                value={values.weight}
+                onChange={handleChange('weight')}
+                invalid={Boolean(errors.weight)}
               />
             </FormField>
             <FormField
