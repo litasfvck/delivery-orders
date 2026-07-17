@@ -30,47 +30,22 @@ namespace delivery_orders_backend.Services
         }
 
         public async Task<IEnumerable<OrderDto>> GetAllOrdersAsync(CancellationToken ct)
-        {
-            return await context.Orders
+            => await context.Orders
                 .AsNoTracking()
-                .Select(order => new OrderDto(
-                    order.Id,
-                    order.OrderNumber,
-                    order.SenderCity,
-                    order.SenderAddress,
-                    order.ReceiverCity,
-                    order.ReceiverAddress,
-                    order.Weight,
-                    order.PickupDate,
-                    order.CreatedAt
-                ))
+                .Select(order => MapToDto(order))
                 .ToArrayAsync(ct);
-        }
 
         public async Task<OrderDto?> GetOrderByIdAsync(
             Guid id,
-            CancellationToken ct)
-        {
-            return await context.Orders
-                .AsNoTracking()
-                .Where(order => order.Id == id)
-                .Select(order => new OrderDto(
-                    order.Id,
-                    order.OrderNumber,
-                    order.SenderCity,
-                    order.SenderAddress,
-                    order.ReceiverCity,
-                    order.ReceiverAddress,
-                    order.Weight,
-                    order.PickupDate,
-                    order.CreatedAt
-                ))
-                .FirstOrDefaultAsync(ct);
-        }
+            CancellationToken ct
+        ) => await context.Orders
+            .AsNoTracking()
+            .Where(order => order.Id == id)
+            .Select(order => MapToDto(order))
+            .FirstOrDefaultAsync(ct);
 
-        private static OrderDto MapToDto(Order order)
-        {
-            return new OrderDto(
+        private static OrderDto MapToDto(Order order) 
+            => new(
                 order.Id,
                 order.OrderNumber,
                 order.SenderCity,
@@ -81,11 +56,7 @@ namespace delivery_orders_backend.Services
                 order.PickupDate,
                 order.CreatedAt
             );
-        }
 
-        private static string GenerateOrderNumber()
-        {
-            return $"ORD-{DateTime.UtcNow:yyyyMMddHHmmss}";
-        }
+        private static string GenerateOrderNumber() => $"ORD-{DateTime.UtcNow:yyyyMMddHHmmss}";
     }
 }

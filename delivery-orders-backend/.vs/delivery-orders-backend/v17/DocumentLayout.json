@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|c:\\users\\litasfxck\\documents\\work\\delivery-orders\\delivery-orders-backend\\backend.dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|solutionrelative:backend.dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|c:\\users\\litasfxck\\documents\\work\\delivery-orders\\delivery-orders-backend\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|c:\\users\\litasfxck\\documents\\work\\delivery-orders\\delivery-orders-backend\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|solutionrelative:services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|c:\\users\\litasfxck\\documents\\work\\delivery-orders\\delivery-orders-backend\\services\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|solutionrelative:services\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|c:\\users\\litasfxck\\documents\\work\\delivery-orders\\delivery-orders-backend\\dtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|solutionrelative:dtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|c:\\users\\litasfxck\\documents\\work\\delivery-orders\\delivery-orders-backend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -13,6 +25,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|c:\\users\\litasfxck\\documents\\work\\delivery-orders\\delivery-orders-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|c:\\users\\litasfxck\\documents\\work\\delivery-orders\\delivery-orders-backend\\backend.dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|solutionrelative:backend.dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|c:\\users\\litasfxck\\documents\\work\\delivery-orders\\delivery-orders-backend\\migrations\\20260717115607_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,24 +51,12 @@
       "RelativeMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|c:\\users\\litasfxck\\documents\\work\\delivery-orders\\delivery-orders-backend\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|solutionrelative:services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|c:\\users\\litasfxck\\documents\\work\\delivery-orders\\delivery-orders-backend\\middleware\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|solutionrelative:middleware\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|c:\\users\\litasfxck\\documents\\work\\delivery-orders\\delivery-orders-backend\\services\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|solutionrelative:services\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|c:\\users\\litasfxck\\documents\\work\\delivery-orders\\delivery-orders-backend\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|solutionrelative:dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|c:\\users\\litasfxck\\documents\\work\\delivery-orders\\delivery-orders-backend\\dtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|solutionrelative:dtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{150E38A2-C15D-4C40-9B89-584CAD79E68A}|delivery-orders-backend.csproj|c:\\users\\litasfxck\\documents\\work\\delivery-orders\\delivery-orders-backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,11 +78,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAnwB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-17T16:04:00.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "20260717115607_Initial.cs",
               "DocumentMoniker": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\Migrations\\20260717115607_Initial.cs",
               "RelativeDocumentMoniker": "Migrations\\20260717115607_Initial.cs",
@@ -86,12 +103,11 @@
               "RelativeToolTip": "Migrations\\20260717115607_Initial.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwBAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-17T12:35:49.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-17T12:35:49.745Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Backend.Dockerfile",
               "DocumentMoniker": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\Backend.Dockerfile",
               "RelativeDocumentMoniker": "Backend.Dockerfile",
@@ -104,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "delivery-orders-backend.csproj",
               "DocumentMoniker": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\delivery-orders-backend.csproj",
               "RelativeDocumentMoniker": "delivery-orders-backend.csproj",
@@ -112,12 +128,11 @@
               "RelativeToolTip": "delivery-orders-backend.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-17T11:54:47.728Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-17T11:54:47.728Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "delivery-orders-backend.http",
               "DocumentMoniker": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\delivery-orders-backend.http",
               "RelativeDocumentMoniker": "delivery-orders-backend.http",
@@ -129,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -141,31 +156,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\Services\\OrderService.cs",
               "RelativeDocumentMoniker": "Services\\OrderService.cs",
               "ToolTip": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\Services\\OrderService.cs",
               "RelativeToolTip": "Services\\OrderService.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAwwBwAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-17T11:30:56.46Z"
+              "WhenOpened": "2026-07-17T11:30:56.46Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "IOrderService.cs",
               "DocumentMoniker": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\Services\\IOrderService.cs",
               "RelativeDocumentMoniker": "Services\\IOrderService.cs",
               "ToolTip": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\Services\\IOrderService.cs",
               "RelativeToolTip": "Services\\IOrderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-17T11:30:34.074Z"
+              "WhenOpened": "2026-07-17T11:30:34.074Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "OrderDto.cs",
               "DocumentMoniker": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\DTOs\\OrderDto.cs",
               "RelativeDocumentMoniker": "DTOs\\OrderDto.cs",
@@ -177,19 +194,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "CreateOrderDto.cs",
               "DocumentMoniker": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\DTOs\\CreateOrderDto.cs",
               "RelativeDocumentMoniker": "DTOs\\CreateOrderDto.cs",
               "ToolTip": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\DTOs\\CreateOrderDto.cs",
               "RelativeToolTip": "DTOs\\CreateOrderDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-17T11:21:02.921Z"
+              "WhenOpened": "2026-07-17T11:21:02.921Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -197,12 +215,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAgwCAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-17T11:15:23.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-17T11:15:23.634Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -215,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -228,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "GlobalExceptionMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\Middleware\\GlobalExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "Middleware\\GlobalExceptionMiddleware.cs",
@@ -240,7 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\Models\\Order.cs",
               "RelativeDocumentMoniker": "Models\\Order.cs",
@@ -252,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "OrderConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\Data\\OrderConfiguration.cs",
               "RelativeDocumentMoniker": "Data\\OrderConfiguration.cs",
@@ -264,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\litasfxck\\Documents\\work\\delivery-orders\\delivery-orders-backend\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",

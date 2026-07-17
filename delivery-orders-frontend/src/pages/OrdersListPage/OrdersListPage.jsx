@@ -1,11 +1,11 @@
 import { useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { ordersApi } from '../../api/ordersApi';
-import { useAsync } from '../../hooks/useAsync';
-import { RouteLine } from '../../components/RouteLine/RouteLine';
-import { OrderNumberBadge } from '../../components/OrderNumberBadge/OrderNumberBadge';
-import { StateMessage } from '../../components/StateMessage/StateMessage';
 import { Button } from '../../components/Button/Button';
+import { OrderNumberBadge } from '../../components/OrderNumberBadge/OrderNumberBadge';
+import { RouteLine } from '../../components/RouteLine/RouteLine';
+import { StateMessage } from '../../components/StateMessage/StateMessage';
+import { useAsync } from '../../hooks/useAsync';
 import { formatDate, formatWeight } from '../../utils/formatters';
 import styles from './OrdersListPage.module.scss';
 
@@ -60,17 +60,17 @@ export function OrdersListPage() {
             <li key={order.id}>
               <Link to={`/orders/${order.id}`} className={styles.card}>
                 <div className={styles.cardTop}>
-                  <OrderNumberBadge id={order.id} />
+                  <OrderNumberBadge orderNumber={order.orderNumber} />
                   <span className={styles.date}>Забор: {formatDate(order.pickupDate)}</span>
                 </div>
-                <RouteLine from={order.senderCity} to={order.recipientCity} />
+                <RouteLine from={order.senderCity} to={order.receiverCity} />
                 <div className={styles.cardBottom}>
                   <span className={styles.addressPair}>
                     <span>{order.senderAddress}</span>
                     <span className={styles.arrow}>→</span>
-                    <span>{order.recipientAddress}</span>
+                    <span>{order.receiverAddress}</span>
                   </span>
-                  <span className={styles.weight}>{formatWeight(order.weightKg)}</span>
+                  <span className={styles.weight}>{formatWeight(order.weight)}</span>
                 </div>
               </Link>
             </li>

@@ -256,13 +256,5 @@ C:\Users\litasfxck\Documents\work\delivery-orders\delivery-orders-backend\obj\De
 C:\Users\litasfxck\Documents\work\delivery-orders\delivery-orders-backend\obj\Debug\net9.0\delivery-orders-backend.pdb
 C:\Users\litasfxck\Documents\work\delivery-orders\delivery-orders-backend\obj\Debug\net9.0\delivery-orders-backend.genruntimeconfig.cache
 C:\Users\litasfxck\Documents\work\delivery-orders\delivery-orders-backend\obj\Debug\net9.0\ref\delivery-orders-backend.dll
-C:\Users\litasfxck\Documents\work\delivery-orders\delivery-orders-backend\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\litasfxck\Documents\work\delivery-orders\delivery-orders-backend\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\litasfxck\Documents\work\delivery-orders\delivery-orders-backend\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\litasfxck\Documents\work\delivery-orders\delivery-orders-backend\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\litasfxck\Documents\work\delivery-orders\delivery-orders-backend\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\litasfxck\Documents\work\delivery-orders\delivery-orders-backend\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
-C:\Users\litasfxck\Documents\work\delivery-orders\delivery-orders-backend\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\litasfxck\Documents\work\delivery-orders\delivery-orders-backend\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
-C:\Users\litasfxck\Documents\work\delivery-orders\delivery-orders-backend\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
-C:\Users\litasfxck\Documents\work\delivery-orders\delivery-orders-backend\bin\Debug\net9.0\System.Text.Json.dll
+C:\Users\litasfxck\Documents\work\delivery-orders\delivery-orders-backend\obj\Debug\net9.0\delivery-orders-backend.sourcelink.json
+C:\Users\litasfxck\Documents\work\delivery-orders\delivery-orders-backend\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

@@ -6,11 +6,10 @@ export function formatDate(value) {
   return new Intl.DateTimeFormat('ru-RU', {
     day: '2-digit',
     month: '2-digit',
-    year: 'numeric',
+    year: 'numeric'
   }).format(date);
 }
 
-/** Форматирует вес в кг с одним знаком после запятой при необходимости. */
 export function formatWeight(value) {
   const num = Number(value);
   if (Number.isNaN(num)) return String(value);

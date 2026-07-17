@@ -28,7 +28,6 @@ export function CreateOrderPage() {
     return (event) => {
       const value = event.target.value;
       setValues((prev) => ({ ...prev, [field]: value }));
-      // убираем ошибку поля сразу при исправлении, не дожидаясь повторной отправки
       setErrors((prev) => (prev[field] ? { ...prev, [field]: undefined } : prev));
     };
   }
@@ -45,6 +44,7 @@ export function CreateOrderPage() {
       const created = await ordersApi.create({
         ...values,
         weight: Number(values.weight),
+        pickupDate: `${values.pickupDate}T00:00:00Z`
       });
       navigate(`/orders/${created.id}`, {
         state: { justCreated: true },
@@ -62,7 +62,7 @@ export function CreateOrderPage() {
         <p className={styles.eyebrow}>Приёмка груза</p>
         <h1 className={styles.title}>Новый заказ на доставку</h1>
         <p className={styles.lead}>
-          Заполните все поля манифеста. Номер заказа будет присвоен автоматически
+          Заполните все поля. Номер заказа будет присвоен автоматически
           после сохранения.
         </p>
       </div>

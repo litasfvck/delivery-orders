@@ -1,10 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-/**
- * Выполняет асинхронную функцию и следит за состояниями
- * loading / error / data. deps аналогичны зависимостям useEffect —
- * запрос перезапускается при их изменении.
- */
 export function useAsync(asyncFn, deps = []) {
   const [state, setState] = useState({ data: null, error: null, loading: true });
   const isMounted = useRef(true);
@@ -18,7 +13,6 @@ export function useAsync(asyncFn, deps = []) {
       .catch((error) => {
         if (isMounted.current) setState({ data: null, error, loading: false });
       });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, deps);
 
   useEffect(() => {
@@ -27,7 +21,6 @@ export function useAsync(asyncFn, deps = []) {
     return () => {
       isMounted.current = false;
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [run]);
 
   return { ...state, refetch: run };

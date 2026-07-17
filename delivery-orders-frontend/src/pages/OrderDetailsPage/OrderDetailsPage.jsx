@@ -1,11 +1,11 @@
 import { useCallback } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { ordersApi } from '../../api/ordersApi';
-import { useAsync } from '../../hooks/useAsync';
-import { RouteLine } from '../../components/RouteLine/RouteLine';
-import { OrderNumberBadge } from '../../components/OrderNumberBadge/OrderNumberBadge';
-import { StateMessage } from '../../components/StateMessage/StateMessage';
 import { Button } from '../../components/Button/Button';
+import { OrderNumberBadge } from '../../components/OrderNumberBadge/OrderNumberBadge';
+import { RouteLine } from '../../components/RouteLine/RouteLine';
+import { StateMessage } from '../../components/StateMessage/StateMessage';
+import { useAsync } from '../../hooks/useAsync';
 import { formatDate, formatWeight } from '../../utils/formatters';
 import styles from './OrderDetailsPage.module.scss';
 
@@ -55,9 +55,9 @@ export function OrderDetailsPage() {
           <div className={styles.head}>
             <div>
               <p className={styles.eyebrow}>Карточка заказа · только просмотр</p>
-              <OrderNumberBadge id={order.id} size="lg" />
+              <OrderNumberBadge orderNumber={order.orderNumber} size="lg" />
             </div>
-            <RouteLine from={order.senderCity} to={order.recipientCity} size="lg" />
+            <RouteLine from={order.senderCity} to={order.receiverCity} size="lg" />
           </div>
 
           <div className={styles.grid}>
@@ -75,8 +75,8 @@ export function OrderDetailsPage() {
                 <span className={styles.dot} data-role="to" />
                 Получатель
               </h2>
-              <ReadOnlyField label="Город получателя" value={order.recipientCity} />
-              <ReadOnlyField label="Адрес получателя" value={order.recipientAddress} />
+              <ReadOnlyField label="Город получателя" value={order.receiverCity} />
+              <ReadOnlyField label="Адрес получателя" value={order.receiverAddress} />
             </div>
 
             <div className={styles.panel}>
@@ -84,7 +84,7 @@ export function OrderDetailsPage() {
                 <span className={styles.dot} data-role="cargo" />
                 Параметры груза
               </h2>
-              <ReadOnlyField label="Вес груза" value={formatWeight(order.weightKg)} />
+              <ReadOnlyField label="Вес груза" value={formatWeight(order.weight)} />
               <ReadOnlyField label="Дата забора груза" value={formatDate(order.pickupDate)} />
             </div>
           </div>

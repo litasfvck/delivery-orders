@@ -1,6 +1,5 @@
 const REQUIRED_MESSAGE = 'Обязательное поле';
 
-/** today as yyyy-MM-dd, for the pickup date "min" constraint */
 export function todayIso() {
   const now = new Date();
   const offset = now.getTimezoneOffset();
@@ -8,18 +7,14 @@ export function todayIso() {
   return local.toISOString().slice(0, 10);
 }
 
-/**
- * Валидирует форму заказа. Возвращает объект ошибок по имени поля
- * (пустой объект — форма валидна).
- */
 export function validateOrderForm(values) {
   const errors = {};
 
   const requiredTextFields = [
     'senderCity',
     'senderAddress',
-    'recipientCity',
-    'recipientAddress',
+    'receiverCity',
+    'receiverAddress',
   ];
 
   for (const field of requiredTextFields) {
@@ -28,16 +23,16 @@ export function validateOrderForm(values) {
     }
   }
 
-  if (!values.weightKg) {
-    errors.weightKg = REQUIRED_MESSAGE;
+  if (!values.weight) {
+    errors.weight = REQUIRED_MESSAGE;
   } else {
-    const weight = Number(values.weightKg);
+    const weight = Number(values.weight);
     if (Number.isNaN(weight)) {
-      errors.weightKg = 'Введите число';
+      errors.weight = 'Введите число';
     } else if (weight <= 0) {
-      errors.weightKg = 'Вес должен быть больше нуля';
+      errors.weight = 'Вес должен быть больше нуля';
     } else if (weight > 20000) {
-      errors.weightKg = 'Проверьте значение — слишком большой вес';
+      errors.weight = 'Проверьте значение — слишком большой вес';
     }
   }
 

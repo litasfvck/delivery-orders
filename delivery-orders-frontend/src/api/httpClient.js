@@ -1,9 +1,5 @@
 import axios from 'axios';
 
-// Базовый адрес API задаётся через переменную окружения VITE_API_BASE_URL
-// (см. файл .env.example). Если переменная не задана, запросы уходят
-// на относительный путь /api — удобно, если бэкенд отдаётся с того же хоста
-// или запросы проксируются через dev-сервер Vite.
 const baseURL = import.meta.env.VITE_API_BASE_URL || '/api';
 
 export const httpClient = axios.create({
@@ -14,7 +10,6 @@ export const httpClient = axios.create({
   },
 });
 
-// Единая нормализация ошибок, чтобы UI мог полагаться на предсказуемую форму.
 httpClient.interceptors.response.use(
   (response) => response,
   (error) => {
