@@ -1,0 +1,45 @@
+.wrap {
+  border-radius: var(--radius-md);
+  padding: 28px 24px;
+  text-align: center;
+  border: 1px dashed var(--color-border-strong);
+  background: var(--color-surface);
+}
+
+.title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.description {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.action {
+  margin-top: 14px;
+}
+
+.muted {
+  color: var(--color-text);
+}
+
+.danger {
+  border-color: var(--color-danger);
+  background: var(--color-danger-tint);
+
+  .title {
+    color: var(--color-danger);
+  }
+}
+
+.success {
+  border-color: var(--color-success);
+  background: var(--color-success-tint);
+
+  .title {
+    color: var(--color-success);
+  }
+}

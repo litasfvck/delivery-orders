@@ -1,0 +1,56 @@
+.route {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.point {
+  flex: 0 0 auto;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-route);
+
+  &[data-role='to'] {
+    background: var(--color-tag);
+  }
+}
+
+.line {
+  flex: 1 1 32px;
+  min-width: 20px;
+  max-width: 56px;
+  height: 0;
+  border-top: 1.5px dashed var(--color-border-strong);
+}
+
+.city {
+  font-weight: 600;
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.md .city {
+  font-size: 14px;
+}
+
+.lg {
+  gap: 12px;
+
+  .point {
+    width: 11px;
+    height: 11px;
+  }
+
+  .city {
+    font-size: 20px;
+    font-family: var(--font-display);
+  }
+
+  .line {
+    max-width: 96px;
+  }
+}
